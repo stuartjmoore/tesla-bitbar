@@ -236,7 +236,7 @@ def main():
             print ('%sStart HVAC | refresh=true terminal=false bash=%s param1=%s param2=auto_conditioning_start' % (prefix, sys.argv[0], str(i)))
         print ('%s---' % prefix)
         print ('%sGear: %s| color=black' % (prefix, drive_state['shift_state']))
-        print ('%sLocation: %.1f°, %.1f°| color=black' % (prefix, drive_state['latitude'], drive_state['longitude']))
+        print ('%sOpen in Google Maps… | href=https://www.google.com/maps/preview?q=%f,%f' % (prefix, drive_state['latitude'], drive_state['longitude']))
 
 
 if __name__ == '__main__':
